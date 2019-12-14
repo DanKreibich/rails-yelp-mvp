@@ -1,0 +1,13 @@
+<form action="/restaurants" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="name">Name: </label>
+  <input type="text" name="restaurant[name]" id="name">
+  <br>
+  <label for="address">Address: </label>
+  <input type="text" name="restaurant[address]" id="address">
+  <br>
+  <label for="address">Cuisine: </label>
+  <input type="text" name="restaurant[category]" id="category">
+  <br>
+  <input type="submit">
+</form>

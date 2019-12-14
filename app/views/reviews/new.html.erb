@@ -1,0 +1,12 @@
+<form action="<%= restaurant_reviews_path(@restaurant.id) %>" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="content">Content: </label>
+  <input type="text" name="review[content]" id="content">
+  <br>
+  <label for="rating">Rating: </label>
+  <input type="text" name="review[rating]" id="rating">
+  <input type="submit">
+</form>
+
+
+
