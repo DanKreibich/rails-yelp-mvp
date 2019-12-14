@@ -1,3 +1,5 @@
+<!-- simple_form would be the cleaner way -->
+
 <form action="<%= restaurant_reviews_path(@restaurant.id) %>" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <label for="content">Content: </label>
